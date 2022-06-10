@@ -16,7 +16,7 @@ import { ref } from "vue";
 
 const buttonList = ref([
   {
-    link: "http://www.google.com",
+    link: "https://www.facebook.com/jigodevs",
     icon: "mdi-facebook",
   },
   {
@@ -24,7 +24,7 @@ const buttonList = ref([
     icon: "mdi-instagram",
   },
   {
-    link: "http://www.google.com",
+    link: "https://github.com/TavoJG/Portfolio-Frontend",
     icon: "mdi-github",
   },
 ]);

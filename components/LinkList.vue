@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <li v-for="(link, i) in linkList" :key="i">
-      <NuxtLink :to="link.link">{{ link.text }}</NuxtLink>
-    </li>
-  </div>
+  <li v-for="(link, i) in linkList" :key="i">
+    <NuxtLink :to="link.link">{{ link.text }}</NuxtLink>
+  </li>
 </template>
 
 <script setup lang="ts">
@@ -14,6 +12,14 @@ const linkList: Ref<LinkListItem[]> = ref([
   {
     text: "Inicio",
     link: "/",
+  },
+  {
+    text: "Acerca de nosotros",
+    link: "/about_us",
+  },
+  {
+    text: "Portafolio",
+    link: "/portfolio",
   },
 ]);
 </script>
