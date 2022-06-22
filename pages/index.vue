@@ -5,8 +5,8 @@
 </template>
 
 <script setup>
-definePageMeta({
-  title: "JigoDevs",
+useHead({
+  title: "Página principal",
 });
 </script>
 

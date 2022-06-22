@@ -4,12 +4,18 @@
       <div class="max-w-md">
         <h1 class="text-5xl font-bold">Fabricamos ideas</h1>
         <p class="py-6">¿Tienes alguna idea? ¡Te ayudamos a realizarla!</p>
-        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-primary" @click="buttonClick">
+          Conoce mas de nosotros
+        </button>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const buttonClick = () => {
+  navigateTo("/about_me");
+};
+</script>
 
 <style scoped></style>

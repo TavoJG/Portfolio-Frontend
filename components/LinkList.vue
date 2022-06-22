@@ -14,8 +14,8 @@ const linkList: Ref<LinkListItem[]> = ref([
     link: "/",
   },
   {
-    text: "Acerca de nosotros",
-    link: "/about_us",
+    text: "Acerca de mi",
+    link: "/about_me",
   },
   {
     text: "Portafolio",
