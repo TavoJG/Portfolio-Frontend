@@ -1,20 +1,17 @@
-# Nuxt 3 Minimal Starter
+# JigoDev - Personal Portfolio
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+## Introduction
+
+This project works with [Nuxt3](https://v3.nuxtjs.org), [TailWindCSS](https://tailwindcss.com/) and [DaisyUI](https://daisyui.com/)
+
 
 ## Setup
 
-Make sure to install the dependencies:
+This project works with Yarn as Node package manager:
 
+To install all required packages, just run:
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -22,7 +19,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -30,13 +27,13 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.

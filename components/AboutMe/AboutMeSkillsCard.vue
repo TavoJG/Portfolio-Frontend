@@ -2,16 +2,14 @@
   <div class="card lg:card-side bg-base-100 shadow-xl">
     <div class="card-body">
       <h2 class="card-title">Habilidades de desarrollo</h2>
-      <ul class="list-disc">
-        <li v-for="(item, i) in skillList" :key="i">
-          <span class="font-bold">{{ item.title }}</span>
-          <ul class="list-disc">
-            <li v-for="(skill, j) in item.items" :key="j">
-              {{ skill }}
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <div class="columns-1 sm:columns-2 md:columns-3">
+        <AboutMeSkillCard
+          v-for="(skill, i) in skillList"
+          :key="i"
+          :title="skill.title"
+          :content="skill.items"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -53,8 +51,4 @@ const skillList: Ref<SkillsItem[]> = ref([
 ]);
 </script>
 
-<style scoped>
-ul > li {
-  margin-left: 15px;
-}
-</style>
+<style scoped></style>
