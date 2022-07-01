@@ -1,5 +1,10 @@
 <template>
-  <li v-for="(link, i) in linkList" :key="i">
+  <li
+    v-for="(link, i) in linkList"
+    :key="i"
+    class="text-primary"
+    :class="{ 'bg-primary-content': isActiveLink(link.link) }"
+  >
     <NuxtLink :to="link.link">{{ link.text }}</NuxtLink>
   </li>
 </template>
@@ -21,7 +26,13 @@ const linkList: Ref<LinkListItem[]> = ref([
     text: "Portafolio",
     link: "/portfolio",
   },
+  {
+    text: "Contacto",
+    link: "/contact_us",
+  },
 ]);
+
+const isActiveLink = (link: string): boolean => useRoute().path == link;
 </script>
 
 <style scoped></style>

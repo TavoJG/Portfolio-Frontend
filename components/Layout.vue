@@ -21,7 +21,9 @@
             </svg>
           </label>
         </div>
-        <div class="flex-1 px-2 mx-2 font-bold">{{ title }}</div>
+        <div class="flex-1 px-2 mx-2 font-bold text-primary">
+          {{ title }}
+        </div>
         <div class="flex-none hidden lg:block">
           <ul class="menu menu-horizontal">
             <!-- Navbar menu content here -->

@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div data-theme="forest">
     <Layout :title="title">
       <NuxtPage />
+      <Footer />
     </Layout>
   </div>
 </template>

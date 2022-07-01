@@ -1,13 +1,14 @@
 <template>
   <div>
-    <button
+    <a
       v-for="(button, i) in buttonList"
       :key="i"
-      class="btn btn-square btn-ghost"
+      class="btn btn-square btn-ghost mdi"
+      :class="button.icon"
+      aria-hidden="true"
       @click="goTo(button.link)"
     >
-      <i class="mdi" :class="button.icon" aria-hidden="true"></i>
-    </button>
+    </a>
   </div>
 </template>
 
